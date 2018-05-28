@@ -3,7 +3,6 @@ from deuces.card import Card
 
 class Mapper:
     """
-
     Todo
     Add documentation
 

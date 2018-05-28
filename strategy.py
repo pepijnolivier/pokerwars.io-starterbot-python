@@ -5,10 +5,10 @@ from mapper import Mapper
 
 class Strategy():
     """
-    TODO Add comments here
+    TODO
+    Add documentation
 
     """
-
     @staticmethod
     def decide_action(game_info, strategy):
         if game_info["roundTurn"] == 'pre_flop':
@@ -170,16 +170,18 @@ class Strategy():
                 return {'action': 'raise', 'chips': min(game_info['minBet'] * (10 - hand_evaluation), game_info['yourChips'])}
 
         elif game_info["canCallOrRaise"]:
+            your_chips_for_raise = game_info['yourChips'] - game_info['chipsToCall']
+
             # STRAIGHT FLUSH, 4 OF KIND, FUll HOUSE
             if hand_evaluation <= 3:
                 if bet_factor > 4:
                     return {'action': 'raise', 'chips': game_info['yourChips']}
                 else:
-                    return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor + 3, game_info['yourChips'])}
+                    return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor + 3, your_chips_for_raise)}
 
             # STRAIGHT, FLUSH
             elif hand_evaluation <= 5:
-                return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor + 2, game_info['yourChips'])}
+                return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor + 2, your_chips_for_raise)}
 
             # 3 OF A KIND
             elif hand_evaluation == 6:
@@ -190,7 +192,7 @@ class Strategy():
                 if bet_factor == 1:
                     return {'action': 'call'}
                 else:
-                    return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor + 1, game_info['yourChips'])}
+                    return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor + 1, your_chips_for_raise)}
 
             # 2 PAIRS
             elif hand_evaluation == 7:
@@ -203,7 +205,7 @@ class Strategy():
                 elif bet_factor == 1:
                     return {'action': 'call'}
                 else:
-                    return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor, game_info['yourChips'])}
+                    return {'action': 'raise', 'chips': min(game_info['minRaise'] + bet_factor, your_chips_for_raise)}
 
             # PAIR, HIGH CARD
             elif hand_evaluation <= 9:
@@ -227,10 +229,11 @@ class Strategy():
             random_bluff = randint(1, 20)
 
             # TODO DEFINE BLUFFING WEIGHTS
+            your_chips_for_raise = game_info['yourChips'] - game_info['chipsToCall']
             if random_bluff > 15:
-                return {'action': 'raise', 'chips': game_info['yourChips']}
+                return {'action': 'raise', 'chips': your_chips_for_raise}
             elif random_bluff > 10:
-                return {'action': 'raise', 'chips': game_info['yourChips']}
+                return {'action': 'raise', 'chips': min(game_info['minRaise'] * 10, your_chips_for_raise)}
 
         return None
 

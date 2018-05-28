@@ -92,7 +92,6 @@ def subscribe():
 
         sleep(2)
 
-# Validates the strategy and sets as global variable
 def validate_strategy():
     if len(argv) == 1:
         strategy_option = str(strategy_option)
