@@ -12,6 +12,7 @@ username     = 'insert here your bot username, find it at https://www.pokerwars.
 api_token    = 'insert here your api token, find it at https://www.pokerwars.io/token'
 bot_endpoint = 'insert here your bot ip address. i.e.: http://1.2.3.4:8090/'
 
+notifications   = False
 strategy_option = 333  # Can be overwritten by console argument
 
 @post('/pokerwars.io/play')
@@ -76,7 +77,8 @@ def subscribe():
                 json = {
                     'username': username,
                     'token': api_token,
-                    'botEndpoint': bot_endpoint
+                    'botEndpoint': bot_endpoint,
+                    'notifications': notifications
                 }
 
                 r = requests.post('https://play.pokerwars.io/v1/pokerwars/subscribe', json)
