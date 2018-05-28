@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-
 from threading import Thread
 from bottle    import get, post, run, request
 from time      import sleep
-from sys       import exit
+from sys       import exit, argv
+from strategy  import Strategy
 
 import requests
 
@@ -11,6 +11,8 @@ port         = 8090
 username     = 'insert here your bot username, find it at https://www.pokerwars.io/profile'
 api_token    = 'insert here your api token, find it at https://www.pokerwars.io/token'
 bot_endpoint = 'insert here your bot ip address. i.e.: http://1.2.3.4:8090/'
+
+strategy_option = 333  # Can be overwritten by console argument
 
 @post('/pokerwars.io/play')
 def play():
@@ -22,6 +24,8 @@ def play():
     print('Current round turn is ' + str(game_info["roundTurn"]))
     print('Cards on the table are ' + str(game_info["tableCards"]))
     print('Your bot cards are ' + str(game_info["yourCards"]))
+
+    action = Strategy.decide_action(game_info, strategy_option)
 
     if game_info["canCheckOrBet"]:
         # remember: in poker you can check or bet only if in the current turn no bot has bet already
@@ -42,7 +46,8 @@ def play():
     print('Players in turn order with their info are: ' + str(game_info["players"]))
 
     # implement your strategy here, now we always return fold, not great for your leaderboard!
-    return {"action": "fold"}
+    print('Action -------> ' + str(action))
+    return action
 
 @get('/pokerwars.io/ping')
 def ping():
@@ -52,8 +57,9 @@ def ping():
 
 @post('/pokerwars.io/notifications')
 def notifications():
-    print('Received notification')
-    print(request.json)
+    notification = request.json
+    print('Received notification -------> ' + str(notification["type"]))
+    print('Received notification -------> ' + str(notification["message"]))
     return
 
 def subscribe():
@@ -67,7 +73,13 @@ def subscribe():
             if r.status_code == 200:
                 down = False
 
-                r = requests.post('https://play.pokerwars.io/v1/pokerwars/subscribe', json={'username': username, 'token': api_token, 'botEndpoint': bot_endpoint})
+                json = {
+                    'username': username,
+                    'token': api_token,
+                    'botEndpoint': bot_endpoint
+                }
+
+                r = requests.post('https://play.pokerwars.io/v1/pokerwars/subscribe', json)
 
                 print('Subscription --> Status code: ' + str(r.status_code))
                 print('Subscription --> Body: ' + str(r.json()))
@@ -80,7 +92,39 @@ def subscribe():
 
         sleep(2)
 
+# Validates the strategy and sets as global variable
+def validate_strategy():
+    if len(argv) == 1:
+        strategy_option = str(strategy_option)
+        print('|------ Strategy selected (default): ' + strategy_option)
+        print('|------ Aggressiveness factor: ' + strategy_option[0])
+        print('|------ Bluffing factor: ' + strategy_option[1])
+        print('|------ Bet/Raise factor: ' + strategy_option[2])
+
+        return
+
+    if len(argv) != 2:
+        print('Illegal number of arguments [max 1 argument], aborting ...')
+        exit(1)
+
+    try:
+        if 111 <= int(argv[1]) <= 555:
+            global strategy_option
+            strategy_option = argv[1]
+            print('|------ Strategy selected: ' + strategy_option)
+            print('|------ Aggressiveness factor: ' + strategy_option[0])
+            print('|------ Bluffing factor: ' + strategy_option[1])
+            print('|------ Bet/Raise factor: ' + strategy_option[2])
+            return
+
+        print('Illegal number of arguments [max 1 argument], aborting ...')
+        exit(1)
+    except ValueError:
+        print('Illegal choice of strategy [not in range 111 - 555], aborting ...')
+        exit(1)
+
 if __name__ == '__main__':
+    validate_strategy()
     s = Thread(target=subscribe)
     s.daemon = True
     s.start()
