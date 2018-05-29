@@ -227,8 +227,6 @@ class Strategy():
 
         if random_number <= bluff_probability:
             random_bluff = randint(1, 20)
-
-            # TODO DEFINE BLUFFING WEIGHTS
             your_chips_for_raise = game_info['yourChips'] - game_info['chipsToCall']
             if random_bluff > 15:
                 return {'action': 'raise', 'chips': your_chips_for_raise}

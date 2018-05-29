@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import re
 from threading import Thread
 from bottle    import get, post, run, request
 from time      import sleep
@@ -109,7 +110,7 @@ def validate_strategy():
         exit(1)
 
     try:
-        if 111 <= int(argv[1]) <= 555:
+        if re.match("^[1-5]{3}$", int(argv[1])):
             global strategy_option
             strategy_option = argv[1]
             print('|------ Strategy selected: ' + strategy_option)
@@ -118,10 +119,10 @@ def validate_strategy():
             print('|------ Bet/Raise factor: ' + strategy_option[2])
             return
 
-        print('Illegal number of arguments [max 1 argument], aborting ...')
+        print('Illegal choice of strategy, aborting ...')
         exit(1)
     except ValueError:
-        print('Illegal choice of strategy [not in range 111 - 555], aborting ...')
+        print('Illegal choice of strategy, aborting ...')
         exit(1)
 
 if __name__ == '__main__':
