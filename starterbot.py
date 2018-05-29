@@ -80,7 +80,7 @@ def subscribe():
                     'username': username,
                     'token': api_token,
                     'botEndpoint': bot_endpoint,
-                    'notifications': notifications
+                    'notifications': bool(notifications)
                 }
 
                 r = requests.post('https://play.pokerwars.io/v1/pokerwars/subscribe', json)
