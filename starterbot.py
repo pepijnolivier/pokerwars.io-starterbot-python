@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 import re
+from sys import exit, argv
 from threading import Thread
-from bottle    import get, post, run, request
-from time      import sleep
-from sys       import exit, argv
-from strategy  import Strategy
+from time import sleep
 
 import requests
+from bottle import get, post, run, request
+
+from strategy import Strategy
 
 port         = 8090
 username     = 'insert here your bot username, find it at https://www.pokerwars.io/profile'
@@ -109,21 +110,17 @@ def validate_strategy():
         print('Illegal number of arguments [max 1 argument], aborting ...')
         exit(1)
 
-    try:
-        if re.match("^[1-5]{3}$", int(argv[1])):
-            global strategy_option
-            strategy_option = argv[1]
-            print('|------ Strategy selected: ' + strategy_option)
-            print('|------ Aggressiveness factor: ' + strategy_option[0])
-            print('|------ Bluffing factor: ' + strategy_option[1])
-            print('|------ Bet/Raise factor: ' + strategy_option[2])
-            return
+    if re.match("^[1-5]{3}$", argv[1]):
+        global strategy_option
+        strategy_option = argv[1]
+        print('|------ Strategy selected: ' + strategy_option)
+        print('|------ Aggressiveness factor: ' + strategy_option[0])
+        print('|------ Bluffing factor: ' + strategy_option[1])
+        print('|------ Bet/Raise factor: ' + strategy_option[2])
+        return
 
-        print('Illegal choice of strategy, aborting ...')
-        exit(1)
-    except ValueError:
-        print('Illegal choice of strategy, aborting ...')
-        exit(1)
+    print('Illegal choice of strategy, aborting ...')
+    exit(1)
 
 if __name__ == '__main__':
     validate_strategy()
