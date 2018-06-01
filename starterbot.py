@@ -72,7 +72,6 @@ def subscribe():
         try:
             print('Trying to subscribe to pokerwars.io ...')
             r = requests.get(bot_endpoint + 'pokerwars.io/ping')
-
             if r.status_code == 200:
                 down = False
 
@@ -83,7 +82,7 @@ def subscribe():
                     'notifications': bool(notifications)
                 }
 
-                r = requests.post('https://play.pokerwars.io/v1/pokerwars/subscribe', json)
+                r = requests.post('https://play.pokerwars.io/v1/pokerwars/subscribe', json=json)
 
                 print('Subscription --> Status code: ' + str(r.status_code))
                 print('Subscription --> Body: ' + str(r.json()))
