@@ -15,6 +15,11 @@ api_token    = 'insert here your api token, find it at https://www.pokerwars.io/
 bot_endpoint = 'insert here your bot ip address. i.e.: http://1.2.3.4:8090/'
 
 notifications   = False
+
+# First digit aggressive factor
+# Second digit bluffing factor
+# Third digit bet factor
+# e.g. 123  -> agro:1 bluff:2 raise:3
 strategy_option = 333  # Can be overwritten by console argument
 
 @post('/pokerwars.io/play')
