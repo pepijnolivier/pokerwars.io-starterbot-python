@@ -1,0 +1,614 @@
+pokerwars.io-starterbot-python on master [!]
+python starterbot.py
+Bottle v0.12.16 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8090/
+Hit Ctrl-C to quit.
+
+Trying to subscribe to pokerwars.io ...
+Received ping from pokerwars.io, responding with a pong
+127.0.0.1 - - [24/Mar/2019 12:47:00] "GET /pokerwars.io/ping HTTP/1.1" 200 14
+ping OK
+Received ping from pokerwars.io, responding with a pong
+127.0.0.1 - - [24/Mar/2019 12:47:01] "GET /pokerwars.io/ping HTTP/1.1" 200 14
+Received ping from pokerwars.io, responding with a pong
+127.0.0.1 - - [24/Mar/2019 12:47:01] "GET /pokerwars.io/ping HTTP/1.1" 200 14
+Subscription --> Status code: 202
+
+Subscription --> Body: {u'reason': u'user hewoyaha has access and his/her bot endpoint is also valid. Subscribing bot http://a42826ab.ngrok.io/', u'statusDescription': u'Accepted', u'success': True, u'statusCode': 202}
+Received notification
+{u'message': u'Tournament id cb8b0143-e07c-4d81-bb0c-70f7f32a6f13 started with bots [Poker_Potion, PokerRider666, BigToes33, sexyseductress, loose_cannon, braveHearts, oraclebacon, PrettyPinkCard, hewoyaha]', u'type': u'tournament_started'}
+
+
+127.0.0.1 - - [24/Mar/2019 12:47:01] "POST /pokerwars.io/notifications HTTP/1.1" 200 0
+127.0.0.1 - - [24/Mar/2019 12:47:02] "GET / HTTP/1.1" 404 723
+
+Game info received for tournament 5443445965648055681 and round 1, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+
+Your bot cards are [{u'rank': u'ten', u'suit': u'clubs'}, {u'rank': u'eight', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is Poker_Potion
+Big blind player is PokerRider666
+Players in turn order with their info are: [{u'username': u'Poker_Potion', u'pot': 1, u'hasFolded': False, u'chips': 99, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'BigToes33', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'sexyseductress', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'oraclebacon', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:02] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 2, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'five', u'suit': u'clubs'}, {u'rank': u'deuce', u'suit': u'clubs'}]
+
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is PokerRider666
+Big blind player is BigToes33
+Players in turn order with their info are: [{u'username': u'PokerRider666', u'pot': 1, u'hasFolded': False, u'chips': 101, u'allIn': False}, {u'username': u'BigToes33', u'pot': 2, u'hasFolded': False, u'chips': 116, u'allIn': False}, {u'username': u'sexyseductress', u'pot': 2, u'hasFolded': False, u'chips': 86, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'oraclebacon', u'pot': 2, u'hasFolded': False, u'chips': 86, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 0, u'hasFolded': False, u'chips': 104, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:04] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 3, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'deuce', u'suit': u'clubs'}, {u'rank': u'deuce', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is BigToes33
+Big blind player is sexyseductress
+Players in turn order with their info are: [{u'username': u'BigToes33', u'pot': 1, u'hasFolded': False, u'chips': 101, u'allIn': False}, {u'username': u'sexyseductress', u'pot': 2, u'hasFolded': False, u'chips': 106, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'oraclebacon', u'pot': 2, u'hasFolded': False, u'chips': 84, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 0, u'hasFolded': False, u'chips': 104, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:06] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 4, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'jack', u'suit': u'hearts'}, {u'rank': u'nine', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is sexyseductress
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'sexyseductress', u'pot': 1, u'hasFolded': False, u'chips': 91, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'oraclebacon', u'pot': 2, u'hasFolded': False, u'chips': 82, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 0, u'hasFolded': False, u'chips': 104, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}, {u'username': u'BigToes33', u'pot': 0, u'hasFolded': False, u'chips': 120, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:08] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 5, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'queen', u'suit': u'spades'}, {u'rank': u'king', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 1, u'hasFolded': False, u'chips': 99, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 0, u'hasFolded': False, u'chips': 102, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 100, u'allIn': False}, {u'username': u'BigToes33', u'pot': 0, u'hasFolded': False, u'chips': 300, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 98, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:09] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 6, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'queen', u'suit': u'clubs'}, {u'rank': u'three', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 20 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is PrettyPinkCard
+Big blind player is hewoyaha
+Players in turn order with their info are: [{u'username': u'PrettyPinkCard', u'pot': 22, u'hasFolded': False, u'chips': 183, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 0, u'hasFolded': True, u'chips': 64, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'BigToes33', u'pot': 2, u'hasFolded': False, u'chips': 232, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 98, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 99, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:12] "POST /pokerwars.io/play HTTP/1.1" 200 18
+G
+
+
+ame info received for tournament 5443445965648055681 and round 7, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'nine', u'suit': u'hearts'}, {u'rank': u'four', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 1 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is hewoyaha
+Big blind player is Poker_Potion
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 1, u'hasFolded': False, u'chips': 103, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 2, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': True, u'chips': 100, u'allIn': False}, {u'username': u'BigToes33', u'pot': 2, u'hasFolded': False, u'chips': 258, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 98, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 99, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 175, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:13] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 8, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'three', u'suit': u'hearts'}, {u'rank': u'eight', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is Poker_Potion
+Big blind player is PokerRider666
+Players in turn order with their info are: [{u'username': u'Poker_Potion', u'pot': 1, u'hasFolded': False, u'chips': 7, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 2, u'hasFolded': False, u'chips': 98, u'allIn': False}, {u'username': u'BigToes33', u'pot': 2, u'hasFolded': False, u'chips': 315, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 98, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 99, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 175, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 103, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:15] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 9, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'three', u'suit': u'diamonds'}, {u'rank': u'eight', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 2
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is PokerRider666
+Big blind player is BigToes33
+Players in turn order with their info are: [{u'username': u'PokerRider666', u'pot': 1, u'hasFolded': False, u'chips': 196, u'allIn': False}, {u'username': u'BigToes33', u'pot': 2, u'hasFolded': False, u'chips': 219, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 98, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 99, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 175, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 103, u'allIn': False}, {u'username': u'Poker_Potion', u'pot': 0, u'hasFolded': False, u'chips': 7, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:16] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 10, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'ten', u'suit': u'diamonds'}, {u'rank': u'ten', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 103 chips
+If you raise, the minimum raise is 0
+The value of small blind now is 1
+The value of big blind now is 2
+Small blind player is BigToes33
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'BigToes33', u'pot': 1, u'hasFolded': False, u'chips': 217, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 2, u'hasFolded': False, u'chips': 96, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 99, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 175, u'hasFolded': False, u'chips': 0, u'allIn': True}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 103, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 207, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:18] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 11, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'five', u'suit': u'diamonds'}, {u'rank': u'ten', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 2, u'hasFolded': False, u'chips': 94, u'allIn': False}, {u'username': u'braveHearts', u'pot': 4, u'hasFolded': False, u'chips': 95, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 352, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 103, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 207, u'allIn': False}, {u'username': u'BigToes33', u'pot': 0, u'hasFolded': False, u'chips': 43, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:18] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 12, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'five', u'suit': u'spades'}, {u'rank': u'six', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 2, u'hasFolded': False, u'chips': 93, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 4, u'hasFolded': False, u'chips': 348, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 103, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 203, u'allIn': False}, {u'username': u'BigToes33', u'pot': 0, u'hasFolded': False, u'chips': 53, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 94, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:19] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 13, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'eight', u'suit': u'diamonds'}, {u'rank': u'ace', u'suit': u'clubs'}]
+In this hand, your bot can check or bet
+If you bet, the minimum bet is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is PrettyPinkCard
+Big blind player is hewoyaha
+Players in turn order with their info are: [{u'username': u'PrettyPinkCard', u'pot': 2, u'hasFolded': True, u'chips': 384, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 4, u'hasFolded': False, u'chips': 99, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 4, u'hasFolded': False, u'chips': 199, u'allIn': False}, {u'username': u'BigToes33', u'pot': 4, u'hasFolded': False, u'chips': 17, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 94, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 93, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:21] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 14, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'six', u'suit': u'hearts'}, {u'rank': u'three', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 2 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is hewoyaha
+Big blind player is PokerRider666
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 2, u'hasFolded': False, u'chips': 111, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 4, u'hasFolded': False, u'chips': 212, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 94, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 93, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 384, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:22] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 15, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'five', u'suit': u'diamonds'}, {u'rank': u'deuce', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is PokerRider666
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'PokerRider666', u'pot': 2, u'hasFolded': False, u'chips': 216, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 4, u'hasFolded': False, u'chips': 90, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 93, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 384, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 111, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:23] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 16, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'three', u'suit': u'diamonds'}, {u'rank': u'nine', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 2, u'hasFolded': False, u'chips': 88, u'allIn': False}, {u'username': u'braveHearts', u'pot': 4, u'hasFolded': False, u'chips': 89, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 384, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 111, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 222, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:23] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 17, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'queen', u'suit': u'spades'}, {u'rank': u'ace', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 2, u'hasFolded': False, u'chips': 93, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 4, u'hasFolded': False, u'chips': 380, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 111, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 0, u'hasFolded': False, u'chips': 222, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 88, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:24] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 19, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'eight', u'suit': u'diamonds'}, {u'rank': u'eight', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 111 chips
+If you raise, the minimum raise is 0
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is hewoyaha
+Big blind player is PokerRider666
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 2, u'hasFolded': False, u'chips': 111, u'allIn': False}, {u'username': u'PokerRider666', u'pot': 4, u'hasFolded': False, u'chips': 214, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 88, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 93, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 388, u'hasFolded': False, u'chips': 0, u'allIn': True}]
+127.0.0.1 - - [24/Mar/2019 12:47:25] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 20, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'king', u'suit': u'clubs'}, {u'rank': u'nine', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 4
+The value of small blind now is 2
+The value of big blind now is 4
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 2, u'hasFolded': False, u'chips': 86, u'allIn': False}, {u'username': u'braveHearts', u'pot': 4, u'hasFolded': False, u'chips': 89, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 602, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 117, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:26] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 21, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'queen', u'suit': u'spades'}, {u'rank': u'seven', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 4, u'hasFolded': False, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 8, u'hasFolded': False, u'chips': 594, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 117, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 86, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:26] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 23, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'ten', u'suit': u'clubs'}, {u'rank': u'ace', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 4, u'hasFolded': False, u'chips': 117, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 8, u'hasFolded': False, u'chips': 78, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 602, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:27] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 24, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'ten', u'suit': u'spades'}, {u'rank': u'seven', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 4, u'hasFolded': False, u'chips': 86, u'allIn': False}, {u'username': u'braveHearts', u'pot': 8, u'hasFolded': False, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 602, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 117, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:28] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 25, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'deuce', u'suit': u'clubs'}, {u'rank': u'seven', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 4, u'hasFolded': False, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 8, u'hasFolded': False, u'chips': 594, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 117, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 86, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:28] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 27, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'eight', u'suit': u'clubs'}, {u'rank': u'four', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 4 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 4, u'hasFolded': False, u'chips': 117, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 8, u'hasFolded': False, u'chips': 78, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 602, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:29] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 28, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'ace', u'suit': u'clubs'}, {u'rank': u'deuce', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 4, u'hasFolded': False, u'chips': 86, u'allIn': False}, {u'username': u'braveHearts', u'pot': 8, u'hasFolded': False, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 602, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 117, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:29] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 29, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'queen', u'suit': u'diamonds'}, {u'rank': u'eight', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 8
+The value of small blind now is 4
+The value of big blind now is 8
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 4, u'hasFolded': False, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 8, u'hasFolded': False, u'chips': 594, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 117, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 86, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:30] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 31, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'seven', u'suit': u'spades'}, {u'rank': u'king', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 113 chips
+If you raise, the minimum raise is 0
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 8, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 16, u'hasFolded': False, u'chips': 70, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 602, u'hasFolded': False, u'chips': 0, u'allIn': True}]
+127.0.0.1 - - [24/Mar/2019 12:47:31] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 32, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'four', u'suit': u'hearts'}, {u'rank': u'ten', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 8, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 16, u'hasFolded': False, u'chips': 75, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:32] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 33, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'six', u'suit': u'spades'}, {u'rank': u'seven', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 8, u'hasFolded': False, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 16, u'hasFolded': False, u'chips': 610, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 62, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:32] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 35, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'six', u'suit': u'spades'}, {u'rank': u'seven', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 8, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 16, u'hasFolded': False, u'chips': 46, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:33] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 36, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'king', u'suit': u'clubs'}, {u'rank': u'ace', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 8, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 16, u'hasFolded': False, u'chips': 75, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:33] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 37, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'jack', u'suit': u'clubs'}, {u'rank': u'six', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 8, u'hasFolded': False, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 16, u'hasFolded': False, u'chips': 610, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 62, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:34] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 39, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'four', u'suit': u'spades'}, {u'rank': u'four', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 8 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 8, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 16, u'hasFolded': False, u'chips': 46, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 91, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:35] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 40, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'king', u'suit': u'clubs'}, {u'rank': u'six', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 16
+The value of small blind now is 8
+The value of big blind now is 16
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 8, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 16, u'hasFolded': False, u'chips': 75, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:35] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 41, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'nine', u'suit': u'diamonds'}, {u'rank': u'three', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 32 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 16, u'hasFolded': False, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 32, u'hasFolded': False, u'chips': 594, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 62, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:35] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 43, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'nine', u'suit': u'hearts'}, {u'rank': u'queen', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 16, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 32, u'hasFolded': False, u'chips': 30, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:36] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 44, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'jack', u'suit': u'clubs'}, {u'rank': u'king', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 32 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 16, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 32, u'hasFolded': False, u'chips': 51, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 626, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:37] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 45, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'ten', u'suit': u'clubs'}, {u'rank': u'deuce', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 32 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 16, u'hasFolded': False, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 32, u'hasFolded': False, u'chips': 594, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 113, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 62, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:37] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 46, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'jack', u'suit': u'hearts'}, {u'rank': u'three', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 81 chips
+If you raise, the minimum raise is 0
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is PrettyPinkCard
+Big blind player is hewoyaha
+Players in turn order with their info are: [{u'username': u'PrettyPinkCard', u'pot': 642, u'hasFolded': False, u'chips': 0, u'allIn': True}, {u'username': u'hewoyaha', u'pot': 32, u'hasFolded': False, u'chips': 81, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': True, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 83, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:38] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 47, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'three', u'suit': u'clubs'}, {u'rank': u'ten', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 16 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 16, u'hasFolded': False, u'chips': 65, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 32, u'hasFolded': False, u'chips': 30, u'allIn': False}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 674, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:39] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 48, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'five', u'suit': u'diamonds'}, {u'rank': u'ten', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 32 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 16, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 32, u'hasFolded': False, u'chips': 51, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 674, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 65, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:39] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 49, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'nine', u'suit': u'spades'}, {u'rank': u'ace', u'suit': u'spades'}]
+In this hand, your bot can call or raise
+If you call, you will spend 32 chips
+If you raise, the minimum raise is 32
+The value of small blind now is 16
+The value of big blind now is 32
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 16, u'hasFolded': False, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 32, u'hasFolded': False, u'chips': 642, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 65, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 62, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:39] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 51, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'deuce', u'suit': u'spades'}, {u'rank': u'three', u'suit': u'diamonds'}]
+In this hand, your bot can call or raise
+If you call, you will spend 32 chips
+If you raise, the minimum raise is 17
+The value of small blind now is 32
+The value of big blind now is 64
+Small blind player is hewoyaha
+Big blind player is loose_cannon
+Players in turn order with their info are: [{u'username': u'hewoyaha', u'pot': 32, u'hasFolded': False, u'chips': 49, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 62, u'hasFolded': False, u'chips': 0, u'allIn': True}, {u'username': u'braveHearts', u'pot': 0, u'hasFolded': True, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 674, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:40] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 52, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'ten', u'suit': u'spades'}, {u'rank': u'ten', u'suit': u'clubs'}]
+In this hand, your bot can call or raise
+If you call, you will spend 49 chips
+If you raise, the minimum raise is 0
+The value of small blind now is 32
+The value of big blind now is 64
+Small blind player is loose_cannon
+Big blind player is braveHearts
+Players in turn order with their info are: [{u'username': u'loose_cannon', u'pot': 32, u'hasFolded': False, u'chips': 62, u'allIn': False}, {u'username': u'braveHearts', u'pot': 64, u'hasFolded': False, u'chips': 19, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 0, u'hasFolded': True, u'chips': 674, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 49, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:41] "POST /pokerwars.io/play HTTP/1.1" 200 18
+Game info received for tournament 5443445965648055681 and round 53, let's decide the next bot move for this hand
+Current round turn is pre_flop
+Cards on the table are []
+Your bot cards are [{u'rank': u'jack', u'suit': u'clubs'}, {u'rank': u'ace', u'suit': u'hearts'}]
+In this hand, your bot can call or raise
+If you call, you will spend 49 chips
+If you raise, the minimum raise is 0
+The value of small blind now is 32
+The value of big blind now is 64
+Small blind player is braveHearts
+Big blind player is PrettyPinkCard
+Players in turn order with their info are: [{u'username': u'braveHearts', u'pot': 32, u'hasFolded': False, u'chips': 83, u'allIn': False}, {u'username': u'PrettyPinkCard', u'pot': 64, u'hasFolded': False, u'chips': 610, u'allIn': False}, {u'username': u'hewoyaha', u'pot': 0, u'hasFolded': False, u'chips': 49, u'allIn': False}, {u'username': u'loose_cannon', u'pot': 0, u'hasFolded': False, u'chips': 62, u'allIn': False}]
+127.0.0.1 - - [24/Mar/2019 12:47:41] "POST /pokerwars.io/play HTTP/1.1" 200 18
+^C
