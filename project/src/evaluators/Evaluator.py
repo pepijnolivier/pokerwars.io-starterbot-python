@@ -1,4 +1,5 @@
 from utils import CardTransformer
+from PreFlopEvaluator import PreFlopEvaluator
 
 
 class Evaluator:
@@ -20,9 +21,12 @@ class Evaluator:
 
         cardsCount = len(allCards)
 
-        if(cardsCount == = 2):
+        if(cardsCount === 2):
             # pre-flop > use map
             percentage = PreflopEvaluator.evaluatePercentage(transformedCards)
+            return percentage
+
         else:
             # deuces evaluator
             percentage = DeucesEvaluator.evaluatePercentage(transformedCards)
+            return percentage
