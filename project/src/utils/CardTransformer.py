@@ -1,3 +1,6 @@
+from src.models.Card import Card
+
+
 class CardTransformer:
 
     rankMap = {
@@ -24,20 +27,23 @@ class CardTransformer:
     }
 
     def transformCard(self, card):
-        rank = card['rank']
+        value = card['rank']
         suit = card['suit']
 
-        newRank = CardTransformer.rankMap[rank]
+        newValue = CardTransformer.rankMap[value]
         newSuit = CardTransformer.suitMap[suit]
 
-        return '' + str(newRank) + str(newSuit)
+        return Card({
+            id: '' + str(newValue) + str(newSuit),
+            suit: suit,
+            value: value,
+        })
 
     def transformCards(self, cards):
         transformed = []
 
         for item in cards:
-
-            transf = self.translateCard(item)
+            transf = self.transformCard(item)
             transformed.append(transf)
 
         return transformed
