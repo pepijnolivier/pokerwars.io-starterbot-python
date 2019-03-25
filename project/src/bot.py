@@ -32,11 +32,11 @@ def play():
     print('Your bot cards are ' + str(gameInfo.getYourCards()))
 
     # hand logic interpretation
-    roundTurn = gameInfo.getRoundTurn()
-    myCards = gameInfo.getMyCards()
-    tableCards = gameInfo.getTableCards()
 
-    evaluator = Evaluator(gameInfo))
+    evaluator = Evaluator(gameInfo)
+    score = evaluator.evaluate()
+
+    minimumRequiredPreflopPercentage = 58
 
     if game_info["canCheckOrBet"]:
         # remember: in poker you can check or bet only if in the current turn no bot has bet already
