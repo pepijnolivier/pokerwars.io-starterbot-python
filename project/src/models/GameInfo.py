@@ -1,6 +1,10 @@
+from src.utils.CardTransformer import CardTransformer
+
+
 class GameInfo:
     def __init__(self, gameInfo):
         self.gameInfo = gameInfo
+        self.cardTransformer = CardTransformer()
 
     def getCards(self):
         return self.gameInfo["tableCards"]
@@ -9,10 +13,12 @@ class GameInfo:
         return self.gameInfo["roundTurn"]
 
     def getTableCards(self):
-        return self.gameInfo["tableCards"]
+        cards = self.gameInfo["tableCards"]
+        return self.cardTransformer.transformCards(cards)
 
     def getMyCards(self):
-        return self.gameInfo["yourCards"]
+        cards = self.gameInfo["yourCards"]
+        return self.cardTransformer.transformCards(cards)
 
     def getTournamentId(self):
         return self.gameInfo["tournamentId"]
